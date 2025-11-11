@@ -193,8 +193,8 @@ server <- function(input, output, session) {
         axis.line = element_line(color = "white"),
         axis.ticks = element_blank(),
         # make text bigger
-        axis.text = element_text(size = 15),
-        axis.title = element_text(size = 16)
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 13)
       ) +
       ylab("Number of article collaborations") +
       coord_flip()
