@@ -1,36 +1,35 @@
 # ---------------------------------------------------------------
-
 # File : app.R
 # Project : ORCID-Data-Visualization
 # Repository : https://github.com/crkn-rcdr/ORCID-Data-Visualization
 # Original author : Isabela Souza
-# Contributions : 
+# Contributions :
+# LICENSE:This project is a derivative of Collaboration Data Visualization © 2022 by Lyrasis, used under CC BY-SA 4.0.
+#       -https://creativecommons.org/licenses/by-sa/4.0/
 # Purpose :
 #   Provide an interactive Shiny dashboard that visualizes ORCID
 #   -linked research collaborations for a selected institution.
 #   The dashboard includes summary metrics, a global collaboration
 #   map, and indiviual ORCID search.
-
+#
 # Inputs :
 #   - orcid_data_latlng.csv (processed ORCID–Crossref dataset 
 #     including institutional names, locations, DOIs, and ORCID IDs)
 #   - variables: need to enter the organization name and date range
 #   - run the required R packages
-
+#
 # Outputs :
 #  Shiny dashboard that opens, consists of:
 #   - Interactive summary dashboard
 #   - Bar graph of top collaborating institutions
 #   - Leaflet world map showing collaboration density by location
 #   - Searchable tables of institutions and article DOIs
-
-
+#
 # How to run :
 # Open the ORCID-Data-Visualization RStudio project
 # Ensure all required packages are installed
 # Confirm the data file path is correct
 # Run: shiny::runApp("app.R")  or click "Run App" in RStudio
-
 # ---------------------------------------------------------------
 
 # Install required packages (uncomment to install)
