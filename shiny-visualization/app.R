@@ -323,7 +323,7 @@ server <- function(input, output, session) {
 
       # Render map
       leaflet(data=filtered_data) %>%
-        addTiles() %>%
+        addTiles(options = tileOptions(noWrap = TRUE)) %>%
         addCircles(lng = ~lng2, lat = ~lat2) %>%
         addCircleMarkers(data=filtered_data,lng = ~lng2, lat = ~lat2,
                          radius = ~sqrt(filtered_data$`org2 occurrence`) * 4,
